@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" thread-count="10" parallel="tests" verbose="4">
+
+	<test name="Google Test">
+		<parameter name="url" value="https://www.google.com"></parameter>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testcases.GoogleTest" />
+		</classes>
+	</test>
+
+	<test name="Amazon Test">
+		<parameter name="url" value="https://www.amazon.com"></parameter>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testcases.AmazonTest" />
+		</classes>
+	</test>
+
+	<test name="OpenCart Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php"></parameter>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testcases.OpenCartTest" />
+		</classes>
+	</test>
+
+</suite>
